@@ -1,0 +1,6 @@
+Preparando JSON usando INNER JOIN en Node
+https://stackoverflow.com/questions/29412381/nodejs-join-query-formatting-json-output
+
+https://github.com/kyleladd/node-mysql-nesting/blob/master/app.js
+
+https://www.npmjs.com/package/node-mysql-nesting

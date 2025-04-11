@@ -1,0 +1,15 @@
+#config
+
+# Logs
+/logs
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+config.env
+
+#package lock
+package-lock.json
+node_modules
+
+config/config.json

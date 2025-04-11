@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /mnt/vol1/vhost/hsbc-instabenefit-node
+
+hooks:
+  AfterInstall:
+    - location: scripts.sh
+      timeout: 300
+      runas: root

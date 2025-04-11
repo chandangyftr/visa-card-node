@@ -1,0 +1,79 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This is a development for indus backend api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startss": "nodemon server.js",
+    "start": "node server.js",
+    "prod": "node server.js"
+  },
+  "keywords": [
+    "backend",
+    "restful",
+    "api",
+    "rochester"
+  ],
+  "author": "Raj Singh (tw. @thakur.raj786108 email. thakur.raj786108@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "aes-everywhere": "^1.0.0",
+    "async-redis": "^2.0.0",
+    "aws-sdk": "^2.1650.0",
+    "axios": "^1.8.4",
+    "bcryptjs": "^2.4.3",
+    "chalk": "^5.4.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "debug": "^4.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-rate-limit": "^5.1.3",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "request": "^2.88.2",
+    "validator": "^13.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "cloud-repo-tools": {
+    "requiresKeyFile": true,
+    "requiresProjectId": true,
+    "test": {
+      "app": {
+        "requiredEnvVars": [
+          "SQL_USER",
+          "SQL_PASSWORD",
+          "SQL_DATABASE",
+          "SQL_PORT",
+          "INSTANCE_CONNECTION_NAME"
+        ],
+        "msg": "Last 10 visits:",
+        "substitutions": "YOUR_SQL_USER=$SQL_USER,YOUR_SQL_PASSWORD=$SQL_PASSWORD,YOUR_SQL_DATABASE=$SQL_DATABASE,YOUR_INSTANCE_CONNECTION_NAME=$INSTANCE_CONNECTION_NAME",
+        "args": [
+          "app.js"
+        ]
+      },
+      "build": {
+        "requiredEnvVars": [
+          "SQL_USER",
+          "SQL_PASSWORD",
+          "SQL_DATABASE",
+          "SQL_PORT",
+          "INSTANCE_CONNECTION_NAME"
+        ]
+      }
+    }
+  }
+}

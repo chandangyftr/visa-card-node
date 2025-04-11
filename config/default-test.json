@@ -1,0 +1,124 @@
+{
+  "name": "AU_BANK",
+  "db1": {
+    "host": "commondatabase.cluster-cigfmtlfyoea.ap-south-1.rds.amazonaws.com",
+    "port": 3306,
+    "user": "indusshopweb",
+    "password": "Indusshopdb@1234",
+    "database": "au_bank",
+    "debug": false,
+    "multipleStatements": true,
+    "connectTimeout": 10000,
+    "acquireTimeout": 10000
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "admin",
+    "database": "visa",
+    "debug": false,
+    "multipleStatements": true,
+    "connectTimeout": 10000,
+    "acquireTimeout": 10000
+  },
+  "amzpayu": {
+    "MERCHANT_KEY": "gtKFFx",
+    "SALT": "4R38IvwiV57FwVpsgOvTXBdLE4tHUXFW",
+    "PAYU_BASE_URL": "https://test.payu.in/_payment",
+    "PAYU_STATUS_BASE_URL": "https://test.payu.in/merchant/postservice.php?form=2",
+    "UDF5": "IOCL_VOUCHERS",
+    "OFFER_KEY": "",
+    "ENFORCE_METHOD": "DC"
+  },
+  "jwt": {
+    "SECRET": "my32Bit_LONG@-@SuPeRR_SecRET_KEY",
+    "EXPIRES_IN": "1d",
+    "TXN_TOKEN_EXPIRY": "900000"
+  },
+  "payu": {
+    "MERCHANT_KEY": "gtKFFx",
+    "SALT": "4R38IvwiV57FwVpsgOvTXBdLE4tHUXFW",
+    "PAYU_BASE_URL": "https://test.payu.in/_payment",
+    "PAYU_STATUS_BASE_URL": "https://test.payu.in/merchant/postservice.php?form=2",
+    "UDF5": "IOCL_VOUCHERS",
+    "OFFER_KEY": "",
+    "ENFORCE_METHOD": "DC"
+  },
+  "PAYTM": {
+    "BASE_URL": "https://securegw.paytm.in/theia/initiateTransaction",
+    "STATUS_URL": "https://securegw.paytm.in/merchant-status/getTxnStatus",
+    "WEBSERVICE_BASE_URL": "https://securegw.paytm.in/v3/order/status",
+    "BASE_URL_NEW": "securegw.paytm.in",
+    "MID": "Voucha84913226669809",
+    "MERCHANT_KEY": "LaN1VtJXgvQRggcJ",
+    "MERC_UNQ_REF": "IRCTC",
+    "MERC_UNQ_REF_OLD": "IRCTC",
+    "CHANNEL_ID": "WEB",
+    "INDUSTRY_TYPE_ID": "Retail102",
+    "MERCHANT_WEBSITE": "WEBPROD",
+    "PAYMENT_MODE_ONLY": "YES",
+    "AUTH_MODE": "USRPWD",
+    "PAYMENT_TYPE_ID": "UPI",
+    "REFUND_API_URL": "https://securegw.paytm.in/refund/apply"
+  },
+  "sms": {
+    "API_URL": "http://bulkpush.mytoday.com/BulkSms/SingleMsgApi",
+    "FEEDID": "376227",
+    "USERNAME": "9289210570",
+    "PASSWORD": "jttpg",
+    "SENDERID": "GYFTRR",
+    "OTP_TEMPLATE": "Your OTP is XXXXXX. Valid for 15mins\n\nPowered by GyFTR",
+    "COUPON_TEMPLATE": "Your OTP is XXXXXX. Valid for 15mins\n\nPowered by GyFTR",
+    "OTP_TEMPLATE_OLD": "The One Time Password to Login to your Reward Program Account is XXXXXX. This OTP is valid only for 15 minutes."
+  },
+  "contactUs": {
+    "RESENDVOUCHERURL": "http://utility.vouchagram.com/Resend/Default.aspx",
+    "SOURCE": "GYFTR",
+    "CLIENTID": "",
+    "DEALERID": 34,
+    "MISSCALLAPIURL": "http://122.176.68.241:85/API/GYFTR_API.aspx?Method=CreateTicket",
+    "QueryMode": "Web Ticket"
+  },
+  "captcha": {
+    "SECRET_KEY": "6Lc1nysUAAAAAJgdajQJjXdpgdKS2oHFO7f84Eds",
+    "SITE_KEY": "6Lc1nysUAAAAAPSym5hhI-GnxPvQCXNPwNQops0S"
+  },
+  "promoengine": {
+    "BASE_URL": "http://35.154.145.58/",
+    "CLIENT_ID": "pogo9gyftr",
+    "USERNAME": "ankit",
+    "PASSWORD": "babaji@123"
+  },
+  "site": {
+    "base_url": "https://www.gvhelpdesk.net/aubank-click-2-gift/"
+  },
+  "apiSite": {
+    "base_url": "https://api.gvhelpdesk.net/aubank-api/"
+  },
+  "commNgn": {
+    "BASE_URL": "https://voucherapi.gyftr.net/API/",
+    "BASE_URL1": "http://communication.gyftr.net/API/",
+    "USERNAME": "ZVBPNPCHVMBUAQTZYOWPLTXVWXWYERDS",
+    "PASSWORD": "]soLj$si!x6IL![KP~rkQ^sXG^hT3yJS",
+    "ENC_KEY": "6d66fb7debfd15bf716bb14752b9603b",
+    "TemplateId": 154,
+    "PromoTemplateId": 154
+  },
+  "ENC_KEY": "d909dg78609e47ak47diy4cf87t90c4a",
+  "ENCRYPTION": {
+    "ENC_KEY": "d909dg78609e47ak47diy4cf87t90c4a",
+    "ENC_IV": "4009401404502765",
+    "ENC_ALGO": "aes-256-cbc"
+  },
+  "SEAMLESSPG": {
+    "ENC_SECRET_KEY": "U2FsdGVkX19fvSwlwy8X4RYmE7ZLh19kr2wbtLPGJn8=",
+    "CALLER_ID": "VG2410161211a7d3",
+    "API_BASE_URL": "https://api.gvhelpdesk.net/pg/api/v1",
+    "USERNAME": "FIH6298WD56P4UA3LNITEFZE7F4TOTCWOO6R91WT",
+    "PASSWORD": "2oO53w2nsVtt9LrFAjhrqKz609cZdnOjSRUKrFym",
+    "FORM_ACTION": "https://www.gvhelpdesk.net/gyftrpay"
+  }
+  
+}
+
